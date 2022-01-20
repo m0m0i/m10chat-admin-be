@@ -1,0 +1,45 @@
+{
+  "name": "m10lchat-admin-be",
+  "version": "1.0.0",
+  "description": "This is the backend server for m10l chat + Antidote demo admin feature. It's basically a Google Cloud SDK wrapper.",
+  "main": "build/src/index.js",
+  "scripts": {
+    "build": "npm run compile",
+    "compile": "tsc",
+    "clean": "rimraf build",
+    "lint": "npx eslint '**/*.ts'",
+    "fix":"npx eslint --fix '**/*.ts'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m0m0i/m10lchat-admin-be.git"
+  },
+  "author": "m0m0i",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/m0m0i/m10lchat-admin-be/issues"
+  },
+  "homepage": "https://github.com/m0m0i/m10lchat-admin-be#readme",
+  "devDependencies": {
+    "@tsconfig/node16": "^1.0.2",
+    "@types/eslint": "^8.4.0",
+    "@types/node": "^17.0.10",
+    "@types/prettier": "^2.4.3",
+    "@types/rimraf": "^3.0.2",
+    "@typescript-eslint/eslint-plugin": "^5.10.0",
+    "@typescript-eslint/parser": "^5.10.0",
+    "eslint": "^8.7.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.5.1",
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.4.0",
+    "tslib": "^2.3.1",
+    "typescript": "^4.5.4"
+  },
+  "dependencies": {
+    "dotenv": "^14.2.0"
+  }
+}
